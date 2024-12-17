@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     host: true,       // Expose for network
     port: 5173,       // Default port
-    hmr: {
-      protocol: 'ws', // Use WebSocket for hot reload
-    },
+    watch : {
+      usePolling: true
+    }
   },
 })
